@@ -10,3 +10,12 @@
 .destaques h2 {
     color:blue;
 }
+
+.destaques img{
+    width: 150px;
+    height: 230px;
+}
+
+.sobre h3{
+    color:red;
+}
