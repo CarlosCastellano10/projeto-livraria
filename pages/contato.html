@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    <title>Projeto Livraria</title>
+</head>
+<body>
+    <div id="topo">
+        <h1>Livraria John & Paul</h1>
+        <h2>Livros novos e usados com os melhores preços para você!</h2>
+    </div>
+    <div id="menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="produtos.html">Livros</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="sobre.html">John & Paul</a></li>
+                <li><a href="contato.html">Contate-nos</a></li>
+            </ul>
+    </div>
+    <form action="script.php" method="POST">
+        <fieldset>
+            <legend>Contate-nos</legend>
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome...">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="seu@email.com">
+            </p>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" placeholder="Telefone: 91234-5678">
+            </p>
+            <p>
+                <label for="opcoes">Qual o assunto?</label>
+                <select name="opcoes">
+                    <option value="" selected disabled>Selecione --</option>
+                    <option value="opcao1">Trocas</option>
+                    <option value="opcao2">Atendimento</option>
+                    <option value="opcao3">Comercial</option>
+                    <option value="opcao4">Outros</option>
+                </select>
+            </p>
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="seleciona1">
+                <label for="seleciona1">Concorda com os termos?</label>
+            </p>
+            <p>
+                <input type="checkbox" name="seleciona2">
+                <label for="seleciona2">Deseja receber informações sobre a livraria John & Paul?</label>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+    <div id="rodape">
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="produtos.html">Livros</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="/sobre.html">John & Paul</a></li>
+            <li><a href="contato.html">Contate-nos</a></li>
+        </ul>
+        <p>2014. Livraria John & Paul - Todos os direitos reservados - Desing by Carlos Augusto Castellano</p>
+    </div>
+</body>
+</html>

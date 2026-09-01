@@ -1,14 +1,22 @@
+body {
+    background-color: #F0EEE9;
+}
+
 #topo h1 {
     color: red;
-    text-align:center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 #topo h2 {
-    text-align:center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 .destaques h2 {
     color:blue;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
 }
 
 .destaques img{
@@ -18,4 +26,35 @@
 
 .sobre h3{
     color:red;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+p, label, td, li, select, input, textarea, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tfoot {
+    text-align: center;
+    font-weight: bold;
+}
+
+.destaques ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;           
+    align-items: flex-start;  
+}
+
+.destaques li {
+    width: 150px;            
+    text-align: center;
+    
+}
+#menu ul, #rodape ul {
+    display: flex;
+    gap: 100px;           
+    justify-content: center;
 }
