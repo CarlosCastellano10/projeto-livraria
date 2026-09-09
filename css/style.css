@@ -1,60 +1,173 @@
 body {
     background-color: #F0EEE9;
+    margin: 0;
+    padding: 0;
+}
+
+p, label, td, li, select, input, textarea, button, ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topo {
+    background-color: #10159a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
 #topo h1 {
-    color: red;
-    text-align: center;
+    margin: 0 0 10px 0;
     font-family: Georgia, 'Times New Roman', serif;
 }
 
 #topo h2 {
-    text-align: center;
+    margin: 0;
+    font-weight: normal;
     font-family: Georgia, 'Times New Roman', serif;
+}
+
+#menu {
+    background-color: grey;
+    padding: 10px 1px;
+    text-align: center;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .destaques h2 {
-    color:blue;
+    color: blue;
     font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
 }
 
-.destaques img{
-    width: 150px;
-    height: 230px;
+.destaques ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;           
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-.sobre h3{
-    color:red;
+.destaques li {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: #fff; 
+    transition: box-shadow 0.3s ease;
+}
+
+.destaques li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.destaques a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.destaques img {
+    width: 150px;
+    height: 230px;
+    display: block;
+    margin: 0;
+}
+
+table {
+    margin: 40px;
+    background-color: #fff;
 }
 
 table, th, td {
     border: 1px solid black;
 }
 
-p, label, td, li, select, input, textarea, button {
-    font-family: Arial, Helvetica, sans-serif;
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #10159a;
+    color: white;
 }
 
 tfoot {
     text-align: center;
     font-weight: bold;
+    background-color: #eee;
 }
 
-.destaques ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;           
-    align-items: flex-start;  
+.sobre, form {
+    max-width: 800px;
+    margin: 30px;
+    padding: 20px;
 }
 
-.destaques li {
-    width: 150px;            
+.sobre h1 {
+    color: #10159a;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.sobre h3 {
+    color: red;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+fieldset {
+    border: 1px solid #10159a;
+    padding: 20px;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    color: #10159a;
+    padding: 0 10px;
+}
+
+#rodape {
+    background-color: grey;
+    color: #fff;
+    padding: 15px 10px;
     text-align: center;
-    
+    margin-top: 40px;
 }
-#menu ul, #rodape ul {
+
+#rodape ul {
     display: flex;
-    gap: 100px;           
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    gap: 20px;
+}
+
+#rodape a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#rodape p {
+    margin: 0;
 }
